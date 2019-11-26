@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calcular Notas</title>
+    
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+<style>
+    
+    p{
+        text-align: center
+    }
+    .logo
+    {
+        
+        margin-left: 40px;
+    }
+    .logog{
+        background-color: #ffe264;
+        border-bottom: 1px solid #989898;
+        column-count: 3;
+        
+        
+    }
+    .namelog{
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #004695;
+    }
+    </style>
+</head>
+
+<body>
+<form method="@post" action="C:\Users\Letícia Lima\Documents\Eclipse\Notas\src\ftt\ec\hw\rest\NotasService">
+<fieldset>
+    <header>
+        <div class="logog">
+        <img class="logo" src="img/cefsa.png">
+        <p class="namelog"><br>Engenharia de Computação</p>
+        
+    </div>
+    <br>    
+        <br>
+    </header>
+		<p>
+        	<label for="cardType">Matéria:
+        	<select id="cardType" name="cardType" class ="form-control">
+          		<option value="1">Arquitetura de Computadores I</option>
+          		<option value="2">Comunicação de Dados</option>
+          		<option value="3">Comunicação e Mídias Digitais</option>
+                <option value="4">Engenharia de Software II</option>
+                <option value="5">Gestão da Qualidade</option>
+                <option value="6">Linguagem de Programação</option>
+        	</select>
+      		</label>
+        </p>
+		
+		<p>
+			<label for="value">N1: <input id="value" name="value" type="number" required class ="form-control"></label>
+		</p>
+        <p>
+			<label for="value">N2: <input id="value" name="value" type="number" required class ="form-control"></label>
+		</p>
+		<p>
+			<label for="value">Formativa: <input id="value" name="value" type="number" required class ="form-control"></label>
+		</p>
+        <p>
+			<label for="value">N1: <input id="value" name="value" type="number" required class ="form-control"></label>
+		</p>
+        <p>
+			<label for="value">N2: <input id="value" name="value" type="number" required class ="form-control"></label>
+		</p>
+        <p class="notaf"> 
+			<label for="value" >Nota final: <input disabled class ="form-control" ></label>
+		</p>
+        
+
+    		
+		<p>
+			
+			<input name="Submit" type="submit" required>	
+		</p>
+
+</fieldset>
+</form>
+</body>
+</html>
